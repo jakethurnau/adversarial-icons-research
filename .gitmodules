@@ -1,0 +1,3 @@
+[submodule "Tensorflow-MachineLearning-Research"]
+	path = Tensorflow-MachineLearning-Research
+	url = https://github.com/criogenesis/Tensorflow-MachineLearning-Research.git
