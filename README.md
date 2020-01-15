@@ -45,23 +45,15 @@ Under User Variables, you're going to want to click Path and edit it. We're goin
 
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp
-You will also need to add a new path called PYTHONPATH and I recommend adding the following paths:
-
-C:\Users\hakku\Downloads\models\models-master\research\object_detection\utils
-C:\Users\hakku\Downloads\models\models-master\research\object_detection
-C:\Users\hakku\Downloads\models\models-master\research
-C:\Users\hakku\Downloads\models\models-master\research\slim
-C:\Users\hakku\Downloads\models\models-master
-C:\Users\hakku\Downloads\models\models-master\research\object_detection\training
-This path is entirely dependent on where you decide to keep your models folder which will be discussed in the model training section. Make sure you are using the correct path for your setup.
+You will also need to add a new path called PYTHONPATH 
 
 When you've added these paths, click Ok on all corresponding windows
 
 Prerequisites and Dependencies
 At this point it is assumed you already have Python installed and will not be covered in this tutorial. To keep up with consistency I recommend you install version 3.7 as this is the version I will be using. I also highly recommending that if you do not already to have the to your current python version added to the Path section in Environment Variables like we previously did with CUDA.
 
-C:\Users\hakku\AppData\Local\Programs\Python\Python37
-C:\Users\hakku\AppData\Local\Programs\Python\Python37\Scripts
+C:\Users\Jake Thurnau\AppData\Local\Programs\Python\Python37
+C:\Users\Jake Thurnau\AppData\Local\Programs\Python\Python37\Scripts
 (example of my python directories in Path)
 
 This allows you to be able to run any python script in the cmd window in any directory.
@@ -71,14 +63,25 @@ Going forward now, all prerequisites will be installed using pip, so it is highl
 All below pip installs are required both to run Tensorflow as well as run the scripts in this project
 
 pip install --ignore-installed --upgrade Tensorflow-gpu
+
 pip install keras
+
 pip install pandas
+
 pip install numpy
+
 pip install pillow
+
 pip install lxml
+
 pip install Cython
+
 pip install contextlib2
+
 pip install jupyter
+
 pip install matplotlib
+
 pip install opencv-python
+
 pip install pywin32
