@@ -21,7 +21,8 @@ Before installing CUDA, we have to make sure we're using the most up to date ver
 
 At the time of this tutorial, CUDA version 10.0 is the recommended version to install: https://developer.nvidia.com/cuda-10.0-download-archive
 
-installing cuDNN
+# installing cuDNN
+
 Once the correct version of CUDA is installed we have to install cuDNN using this link: https://developer.nvidia.com/rdp/cudnn-download
 
 The site will initially ask you for to login, this means you will have to make a Nvidia account if you do not already have one. Once the account is made, you can login and access the downloads section.
@@ -34,7 +35,8 @@ For me, CUDA was found at C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10
 
 Once you're in the v10.0 folder, you're going to want to copy the bin, include, and lib folder from your CUDA folder (extracted from the zip) into the v10.0 folder and overwrite the files present.
 
-Setting up Environment Variables
+# Setting up Environment Variables
+
 The next step is to setup the necessary paths in environment variables so Tensorflow knows where to look for all the CUDA dependencies.
 
 In the windows search bar you can type “envi” and a prompt to "Edit the system environment variables" should show up, click that.
@@ -49,7 +51,8 @@ You will also need to add a new path called PYTHONPATH
 
 When you've added these paths, click Ok on all corresponding windows
 
-Prerequisites and Dependencies
+# Prerequisites and Dependencies
+
 At this point it is assumed you already have Python installed and will not be covered in this tutorial. To keep up with consistency I recommend you install version 3.7 as this is the version I will be using. I also highly recommending that if you do not already to have the to your current python version added to the Path section in Environment Variables like we previously did with CUDA.
 
 C:\Users\Jake Thurnau\AppData\Local\Programs\Python\Python37
@@ -85,3 +88,8 @@ pip install matplotlib
 pip install opencv-python
 
 pip install pywin32
+
+
+# Running the programs
+
+To use this program, an image is first fed into a script to perturb the image. To create a perturbed image using image processing techniques such as gaussian or poisson noise, the noisy.py script is used. 
