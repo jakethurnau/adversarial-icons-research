@@ -1,6 +1,7 @@
 # adversarial-icons-research
 
-#Installing Tensorflow-GPU
+# Installing Tensorflow-GPU
+
 The majority of this tutorial will be referencing a YouTube tutorial on installing Tensorflow GPU for windows 10: https://www.youtube.com/watch?v=KZFn0dvPZUQ
 
 I would like to first mention that it is entirely possible to run Tensorflow primarily using a CPU. However, the processing speed will be greatly reduced compared to utilizing a GPU, so I will only be talking about the Tensorflow-GPU installation.
