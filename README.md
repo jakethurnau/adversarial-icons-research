@@ -92,4 +92,8 @@ pip install pywin32
 
 # Running the programs
 
-To use this program, an image is first fed into a script to perturb the image. To create a perturbed image using image processing techniques such as gaussian or poisson noise, the noisy.py script is used. 
+To use this program, an image is first fed into a script to perturb the image. To create a perturbed image using image processing techniques such as gaussian or poisson noise, the noisy.py script is used. This script tells the user to choose a background image, a web browser icon to perturb, makes the perturbations, and then pastes the perturbed icon back into the background image. 
+
+To create adversarial icons using the FGSM method, an input image is fed into the adversarial1.py script. After this, the noisy.py script is run and the user chooses a background image, and then chooses any browser icon, followed by the option for an adversarial image. This choice pastes the FGSM adversarial icon into the background image using the image created from the adversarial1.py script. 
+
+After creation of the perturbed images, the image is run thru the Multi_Object_Detect_Demo.py script to start the object detection model using the image with the perturbed icon in it. The model will then attempt to predict the icon and show a confidence level of recognition. 
